@@ -1,4 +1,4 @@
-# Team-Windrush - an example project
+# Team-Windrush - an example project - marked
 
 This is an example project from the [2018-19 Data Science for Everyone
 class](https://matthew-brett.github.io/dsfe).
@@ -11,19 +11,50 @@ The project is by:
 
 Elise kindly agreed to allow the files to be public.
 
-The project got good marks.
+## Example
 
-To review, start at the `READ_ME_PROJECT_SUBMISSION.ipynb` notebook.
+See some marking markup in the notebook `READ_ME_PROJECT_SUBMISSION.ipynb`.
 
-Some of you reading this will be doing the 2019-20 version of the same "data
-science for everyone" class, and this project will be roughly equivalent to
-what you should expect to do.  If you are doing the "design and analysis 2"
-course, remember that you have covered more than the students covered in the
-first-year undergraduate class, so your projects will tend to be more
-substantial, using a wider range of techniques.
+## Marking markup
 
-You will notice that the project starts with one question, then moves to other
-questions as it becomes clear that it was not possible to answer the question
-the project members set themselves.
+Give comments as you read through the text.
 
-There is no need to copy the exact approaches here.  For example, this project uses a rather fancy piece of Matplotlib code to make a nice diagram - but that was only one sensible way to solve that problem.
+Marking comments in text cells look like this:
+
+**marking** This is a marking comment.  It can go on for several lines, and include *Markdown* markup.  It finishes with **end**.
+
+Note the start and end markers are typed `**marking**` and `**end**`.
+
+Marking comments in code look like this:
+
+```{python}
+##marking
+# Here are some comments on the code, in the code.
+# The comments can be several lines.
+# They end with:
+##end
+```
+## Marking procedure
+
+* Run the notebook.
+* Comment on the notebook as you go in the text and code cells, with markup as
+  above.
+* Fix any errors in the code that you find.
+* Record the fixes in the comments.
+
+Example:
+
+```{python}
+# Original
+print something
+```
+
+```{python}
+# Marked
+##marking
+# The code here causes an error.
+# print something
+# I've replaced it with what I think you meant.
+print('something'
+##end
+```
